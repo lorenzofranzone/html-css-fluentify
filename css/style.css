@@ -31,6 +31,11 @@ body {
   border-radius: 6px;
   text-transform: uppercase;
   display: inline-block;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
 }
 
 /*//////////////////////////////////////////////////
@@ -69,7 +74,6 @@ header .container {
 .header-bottom h1 {
   width: 60%;
   font-size: 64px;
-  font-weight: 400;
   margin-bottom: 32px;
 }
 
@@ -144,6 +148,17 @@ main {
 
 .main-top {
   background: #d1d1d1;
+  text-align: center;
+}
+
+.main-top h2 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.main-top p {
+  font-size: 22px;
+  color: #858585;
 }
 
 .main-center {

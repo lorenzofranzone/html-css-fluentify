@@ -142,7 +142,13 @@ main {
   background: #fff;
 }
 
-[class^="main"] {
+main p {
+  color: #9c9c9c;
+  line-height: 130%;
+  font-size: 18px;
+}
+
+[class^="main"]:not(.main-bottom-content):not(.main-bottom-img) {
   padding: 48px 0px;
 }
 
@@ -210,12 +216,6 @@ Card
   width: 90px;
 }
 
-.card p {
-  color: #9c9c9c;
-  line-height: 130%;
-  font-size: 18px;
-}
-
 /*--------------------------------------------------
 Main Bottom
 --------------------------------------------------*/
@@ -230,9 +230,21 @@ Main Bottom
   width: 50%;
   margin-right: 32px;
   float: left;
-  background: #c6289e;
 }
 
+.main-bottom-img img {
+  width: 100%;
+}
+
+.main-bottom-content {
+  float: right;
+  width: 40%;
+}
+
+.main-bottom-content h2 {
+  font-size: 38px;
+  margin-bottom: 16px;
+}
 
 /*//////////////////////////////////////////////////
 --------------------------------------------------

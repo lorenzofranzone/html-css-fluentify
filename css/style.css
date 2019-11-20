@@ -26,6 +26,12 @@ body {
   position: relative;
 }
 
+.btn-green {
+  background: #78bf00;
+  padding: 24px;
+  border-radius: 6px;
+}
+
 /*//////////////////////////////////////////////////
 --------------------------------------------------
 HEADER
@@ -42,7 +48,6 @@ header .container {
 }
 
 .header-top {
-  background: purple;
   position: absolute;
   top: 0;
   left: 0;
@@ -58,20 +63,62 @@ header .container {
   vertical-align: middle;
 }
 
-/* .header-bottom-content {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-} */
-
 /*--------------------------------------------------
 Menu navigazione principale
 --------------------------------------------------*/
 
-.menu-main {
-  background: #3e4f8c;
+.navbar {
+  float: left;
 }
+
+ul.menu {
+  padding: 0;
+}
+
+ul.menu li {
+  display: inline;
+  list-style: none;
+  line-height: 80px;
+}
+
+ul.menu li a {
+  padding: 16px;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+
+.navbarul.menu li:first-child a {
+  margin-right: 64px;
+  padding: 0px;
+  vertical-align: text-bottom;
+}
+
+.logo {
+  padding: 0px;
+  position: relative;
+  vertical-align: -8px;
+}
+
+.side-menu {
+  float: right;
+}
+
+.btn-login {
+  padding: 10px 32px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+}
+
+.side-menu .btn-green {
+  padding: 10px;
+}
+
+
 
 /*//////////////////////////////////////////////////
 --------------------------------------------------

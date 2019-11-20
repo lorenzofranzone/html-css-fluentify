@@ -23,7 +23,6 @@ body {
 .container {
   width: 1200px;
   margin: auto;
-  background: rgb(255, 255, .1);
   position: relative;
 }
 
@@ -34,8 +33,44 @@ HEADER
 //////////////////////////////////////////////////*/
 
 header {
+    background: #193059;
+}
+
+header .container {
+  position: relative;
   height: 50vh;
-  background: #ff000010;
+}
+
+.header-top {
+  background: purple;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.header-bottom {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: lime;
+  vertical-align: middle;
+}
+
+/* .header-bottom-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+} */
+
+/*--------------------------------------------------
+Menu navigazione principale
+--------------------------------------------------*/
+
+.menu-main {
+  background: #3e4f8c;
 }
 
 /*//////////////////////////////////////////////////
@@ -45,20 +80,60 @@ MAIN
 //////////////////////////////////////////////////*/
 
 main {
-  background: #00ff0010;
+  background: #fff;
+}
+
+[class^="main"] {
+  padding: 48px 0px;
 }
 
 .main-top {
-  background: #00ff0015;
+  background: #d1d1d1;
 }
 
 .main-center {
-  background: #00ff0020;
+  border-bottom: 1px solid #dedede;
 }
 
-.main-bottom {
-  background: #00ff0025;
+.main-center .container:after {
+  content: '';
+  display: table;
+  clear: both;
 }
+
+/*--------------------------------------------------
+Card
+--------------------------------------------------*/
+
+.card {
+  background: #e4d73a;
+  width: calc(33.33% - 8px);
+  margin-right: 12px;
+  padding: 16px;
+  float: left;
+}
+
+.card:last-child {
+  margin-right: 0px;
+}
+
+/*--------------------------------------------------
+Main Bottom
+--------------------------------------------------*/
+
+.main-bottom .container:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.main-bottom-img {
+  width: 50%;
+  margin-right: 32px;
+  float: left;
+  background: #c6289e;
+}
+
 
 /*//////////////////////////////////////////////////
 --------------------------------------------------
@@ -67,5 +142,15 @@ FOOTER
 //////////////////////////////////////////////////*/
 
 footer {
-  background: #0000ff10;
+  padding: 48px;
+  background: #d1d1d1;
+}
+
+footer h2 {
+  display: inline-block;
+}
+
+footer form {
+  display: inline-block;
+  float: right;
 }

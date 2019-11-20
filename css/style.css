@@ -176,15 +176,44 @@ Card
 --------------------------------------------------*/
 
 .card {
-  background: #e4d73a;
   width: calc(33.33% - 8px);
   margin-right: 12px;
   padding: 16px;
   float: left;
+  text-align: center;
 }
 
 .card:last-child {
   margin-right: 0px;
+}
+
+.card-img {
+  background: pink;
+  height: 220px;
+}
+
+.card img {
+  height: 220px;
+}
+
+.card h3 {
+  color: #78bf00;
+  font-size: 24px;
+  padding: 24px 24px 0;
+}
+
+.card h3:after {
+  content: '';
+  display: block;
+  margin: 24px auto;
+  border-bottom: 2px solid #9c9c9c;
+  width: 90px;
+}
+
+.card p {
+  color: #9c9c9c;
+  line-height: 130%;
+  font-size: 18px;
 }
 
 /*--------------------------------------------------

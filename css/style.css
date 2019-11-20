@@ -38,6 +38,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
+p, .footer-select select {
+  color: #9c9c9c;
+  line-height: 130%;
+  font-size: 18px;
+}
+
 /*//////////////////////////////////////////////////
 --------------------------------------------------
 HEADER
@@ -142,12 +148,6 @@ main {
   background: #fff;
 }
 
-main p {
-  color: #9c9c9c;
-  line-height: 130%;
-  font-size: 18px;
-}
-
 [class^="main"]:not(.main-bottom-content):not(.main-bottom-img) {
   padding: 48px 0px;
 }
@@ -241,7 +241,7 @@ Main Bottom
   width: 40%;
 }
 
-.main-bottom-content h2 {
+.main-bottom-content h2, footer h2 {
   font-size: 38px;
   margin-bottom: 16px;
 }
@@ -253,8 +253,12 @@ FOOTER
 //////////////////////////////////////////////////*/
 
 footer {
-  padding: 48px;
   background: #d1d1d1;
+  position: relative;
+}
+
+footer .container {
+  padding: 48px 0px 64px;
 }
 
 footer h2 {
@@ -264,4 +268,38 @@ footer h2 {
 footer form {
   display: inline-block;
   float: right;
+}
+
+label {
+  color: #9c9c9c;
+  line-height: 130%;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.footer-select {
+  display: inline-block;
+  border-bottom: 2px solid #858585;
+}
+
+.footer-select select {
+  display: inline-block;
+  background: transparent;
+  width: 180px;
+  padding: 20px;
+  height: 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: none;
+}
+
+footer .btn-green {
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.help {
+  position: fixed;
+  bottom: -3px;
+  right: 32px;
 }
